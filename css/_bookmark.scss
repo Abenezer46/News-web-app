@@ -1,0 +1,40 @@
+.clear {
+    position: fixed;
+    top: 90%;
+    left: 5%;
+    z-index: 2;
+    background: #d38265;
+    color: #000;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.no-key {
+    color: #d38265;
+    display: flex;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background: #fff;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: fit-content;
+    text-align: center;
+
+    i {
+        font-size: 150px;
+        margin-bottom: 20px;
+    }
+    p{
+        font-size: 20px;
+        font-weight: lighter;
+    }
+}

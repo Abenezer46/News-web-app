@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap');
+
+a {
+    text-decoration: none;
+}
+
+.infocard {
+    color: #fff;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: #fff;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0 40px;
+
+    header {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        .left-side {
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+
+            span {
+                color: #000;
+            }
+
+            .c-title {
+                font-family: 'Playfair Display', serif;
+                font-size: 35px;
+                font-weight: 800;
+            }
+
+            .source {
+                background-color: #ccc;
+                font-size: 20px;
+                color: #fff;
+                width: fit-content;
+                padding: 5px 15px;
+                border-radius: 15px;
+            }
+        }
+
+        .close-btn {
+            position: relative;
+            top: -50px;
+            left: 0;
+            font-size: 40px;
+            background-color: #fff;
+        }
+    }
+
+    main {
+        display: flex;
+        color: #000;
+
+        img {
+            padding-right: 20px;
+            margin-right: 20px;
+            border-right: 2px solid #000;
+            width: 50%;
+        }
+
+        .description {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 25px;
+
+            p {
+                font-size: 25px;
+                margin-bottom: 10px;
+                width: 100%;
+                border-bottom: 1px solid #ccc;
+                font-weight: 500;
+            }
+        }
+
+        .author {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 25px;
+
+            p {
+                font-size: 25px;
+                margin-bottom: 10px;
+                width: 100%;
+                border-bottom: 1px solid #ccc;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .infocard {
+        padding: 10px;
+
+        .card {
+            height: 100%;
+            header {
+                display: flex;
+                position: relative;
+                margin-bottom: 0px;
+
+                .left-side {
+                    display: flex;
+                    flex-direction: column;
+                    width: 60%;
+                    margin-left: 50px;
+
+                    span {
+                        color: #000;
+                        margin-left: -25%;
+                    }
+
+                    .c-title {
+                        font-family: 'Playfair Display', serif;
+                        font-size: 20px;
+                    }
+
+                    .source {
+                        display: none;
+                        background-color: #ccc;
+                        font-size: 15px;
+                        color: #fff;
+                        width: fit-content;
+                        padding: 5px 10px;
+                        border-radius: 15px;
+                    }
+                }
+
+                .close-btn {
+                    position: absolute;
+                    top: 0;
+                    left: 90%;
+                    font-size: 20px;
+                    background-color: #fff;
+                }
+            }
+
+            main {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                color: #000;
+
+                img {
+                    padding-right: 0;
+                    margin-right: 0;
+                    border-right: none;
+                    width: 90%;
+                    height: 100%;
+                    height: 180px;
+                    border-radius: 10px;
+                }
+
+                .description {
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin-bottom: 10px;
+
+                    p {
+                        font-size: 15px;
+                        margin-bottom: 0px;
+                        width: 90%;
+                        border-bottom: 1px solid #ccc;
+                        font-weight: 600;
+                    }
+
+                    span {
+                        font-size: 15px;
+                    }
+                }
+
+                .author {
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin-bottom: 25px;
+
+                    p {
+                        font-size: 15px;
+                        margin-bottom: 0px;
+                        width: 90%;
+                        border-bottom: 1px solid #ccc;
+                        font-weight: 600;
+                    }
+
+                    span {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
