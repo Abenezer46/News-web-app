@@ -17,7 +17,7 @@ searchBtn.addEventListener('click', (e) => {
   }
 });
 categoryBtn.addEventListener('click', (e) => {
-  console.log(e.target.innerText);
+  //console.log(e.target.innerText);
   container.querySelector('.newses').innerHTML = '';
   categoryBtn.querySelector('.general').classList.remove('active');
   category = e.target.innerText;
