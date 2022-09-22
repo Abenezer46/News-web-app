@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL here]()
+- Solution URL: [Solution URL here](https://news-web-app.pages.dev/)
 
 ## My process
 
@@ -41,7 +41,7 @@ Users should be able to:
 - CSS custom properties
 - FlexBox
 - Vanilla javascript
-- Api - [News Api](https://newsapi.org)
+- Api - [Currents API](https://currentsapi.services)
 
 ## Author
 

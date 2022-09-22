@@ -124,6 +124,7 @@ li {
                 color: #fff;
                 display: inline-block;
                 text-align: center;
+                text-transform: capitalize;
 
                 &:hover {
                     border-bottom: 2px solid #000;
@@ -154,11 +155,12 @@ li {
             margin-top: 25px;
             position: relative;
 
-            .noNetwork{
-                img{
+            .noNetwork {
+                img {
                     width: 100%;
                 }
             }
+
             .news {
                 background-color: #ccc;
                 width: 300px;
@@ -207,7 +209,8 @@ li {
                             color: #fff;
                         }
                     }
-                    i.active{
+
+                    i.active {
                         background-color: #000;
                         color: #fff;
                     }
@@ -222,7 +225,7 @@ li {
     }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
     .container {
         padding: 10px 5px;
     }
@@ -248,13 +251,16 @@ li {
             padding: 0px;
             width: fit-content;
             border: none;
+
             &:hover {
                 border-bottom: none;
             }
-            p{
+
+            p {
                 display: none;
             }
-            i{
+
+            i {
                 margin-left: 0px;
             }
         }
