@@ -137,8 +137,6 @@ function News(info) {
 }
 
 bookmarkBtn.addEventListener('click', (e) => {
-  console.log(localStorage);
-
   if (localStorage.getItem('bookmarks') === null) {
     container.querySelector('.newses').innerHTML = `
      <div class="no-key">
